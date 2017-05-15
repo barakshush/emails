@@ -1,0 +1,977 @@
+<html><script async="async" src="https://apply.global.brandeis.edu/ping">/**/</script><head><style type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    /******************************************reset*******************************************/
+
+    .ReadMsgBody {
+    width: 100%;
+    background-color: #ffffff;
+  }
+  .ExternalClass {
+    width: 100%;
+    background-color: #ffffff;
+  }
+  .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+    line-height: 100%;
+  }
+    
+/******************************************CSS*******************************************/
+  html {
+    width: 100%;
+  }
+  body {
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    margin: 0;
+    padding: 0;
+  }
+  table {
+    border-spacing: 0;
+    table-layout: fixed;
+    margin: 0 auto;
+  }
+    /*?????*/
+  table table table {
+    table-layout: auto;
+  }
+  img {
+    /*Displays an element as a block element (like &amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;lt;p&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;gt;)*/
+    display: block !important;
+    /*The overflow is clipped, and the rest of the content will be invisible*/
+    overflow: hidden !important;
+  }
+  table td {
+    border-collapse: collapse;
+  }
+    /*???????????????????????*/
+  .yshortcuts a {
+    border-bottom: none !important;
+  }
+  a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  .textbutton a {
+    font-family: 'open sans', arial, sans-serif !importat;
+    color: #ffffff !important;
+  }
+  .footer-link a {
+    color: #979797 !important;
+  }
+  
+    
+    /*Responsive*/
+    @media only screen and (max-width: 590px) {
+    body {
+      width: auto !important;
+    }
+    table[class="MAS-600"] {
+      width: 450px !important;
+    }
+    table[class="MAS-inner"] {
+      width: 90% !important;
+    }
+    table[class="MAS2-2"] {
+      width: 47% !important;
+      text-align: left !importatrtant;
+    }
+    table[class="MAS3-3"] {
+      width: 100% !important;
+      text-align: center !important;
+    }
+    table[class="MAS1-3"] {
+      width: 29% !important;
+    }
+    table[class="MAS3-1"] {
+      width: 64% !important;
+      text-align: left !important;
+    }
+    td[class="header-td"] {
+      height: 50px !important;
+      max-height: 50px !important;
+      line-height: 0px !important;
+    }
+    td[class="td-hide"] {
+      height: 0px !important;
+      max-height: 0px !important;
+      line-height: 0px !important;
+    }
+    /* Image */img[class="img1"] {
+      width: 100% !important;
+      height: auto !important;
+    }
+  }
+  @media only screen and (max-width: 479px) {
+    body {
+      width: auto !important;
+    }
+    table[class="MAS-600"] {
+      width: 290px !important;
+    }
+    table[class="MAS-inner"] {
+      width: 82% !important;
+    }
+    table[class="MAS2-2"] {
+      width: 100% !important;
+      text-align: center !important;
+    }
+    table[class="MAS3-3"] {
+      width: 100% !important;
+      text-align: center !important;
+    }
+    table[class="MAS1-3"] {
+      width: 100% !important;
+    }
+    table[class="MAS3-1"] {
+      width: 100% !important;
+      text-align: center !important;
+    }
+    td[class="header-td"] {
+      height: 50px !important;
+      max-height: 20px !important;
+      line-height: 0px !important;
+    }
+    td[class="td-hide"] {
+      height: 0px !important;
+      max-height: 0px !important;
+      line-height: 0px !important;
+    }
+    /* image */img[class="img1"] {
+      width: 100% !important;
+    }
+  }
+</style>
+
+    <style>
+    body 
+    {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+    #button {
+        
+        background-color:white;
+        -webkit-border-radius:40px;
+        -moz-border-radius:40px;
+        border-radius:40px;
+}
+        
+  #save {
+    position: absolute;
+    bottom: 70px;
+    width: 206px;
+    left: 22px;
+    height: 55px;
+    background-color: #68c0b0;
+    line-height: 56px;
+    color: #FFF;
+    border-radius: 3px;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-image: url(img/icons/save_arrow.png);
+    background-repeat: no-repeat;
+    background-position: 118px 19px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    padding-left: 13px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+  .ani {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    box-shadow: inset 200px 0px 0px rgba(0,0,0,0.25);
+  }
+  .de {
+    background-color: #b1b1b1!important;
+    background-position: 118px -65px!important;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4 ease;
+  }
+  #save.de:hover {
+    background-color: #b1b1b1!important;
+  }
+  #save:hover {
+    background-color: #5ca99a!important;
+  }
+  #menu_btn {
+    width: 16px;
+    height: 12px;
+    position: absolute;
+    left: 210px;
+    top: 37px;
+    cursor: pointer;
+  }
+  #menu_btn div {
+    background-color: #959799;
+    height: 2px;
+    width: 16px;
+    position: absolute;
+    left: 0px;
+  }
+  #menu_btn .stroke_1 {
+    top: 0px;
+  }
+  #menu_btn .stroke_2 {
+    top: 4px;
+  }
+  #menu_btn .stroke_3 {
+    top: 8px;
+  }
+  #menu {
+    position: absolute;
+    top: 84px;
+    left: 0px;
+    width: 250px;
+    background-color: rgba(255,255,255,0.05);
+    z-index: 99;
+  }
+  #menu li {
+    color: #828282}
+    #menu li:last-child {
+      padding-bottom: 20px;
+    }
+    #menu a {
+      color: #828282;
+      display: block;
+      padding: 10px 20px 10px 20px;
+    }
+    #menu a:hover {
+      color: #FFF;
+    }
+    #frame {
+      opacity: 1!important;
+    }
+    /*** Tooltip Actions ***/
+    #cmdLink {
+      background-image: url(img/icons/link.png?random=5549dfce3c62a);
+    }
+    #cmdLeftAlign {
+      background-image: url(img/icons/leftAlign.png?random=5549dfce3c663);
+    }
+    #cmdCenterAlign {
+      background-image: url(img/icons/centerAlign.png?random=5549dfce3c69b);
+    }
+    #cmdRightAlign {
+      background-image: url(img/icons/rightAlign.png?random=5549dfce3c6d3);
+    }
+    #cmdBold {
+      background-image: url(img/icons/bold.png?random=5549dfce3c70b);
+    }
+    #cmdItalic {
+      background-image: url(img/icons/italic.png?random=5549dfce3c744);
+      background-position: 10px center}
+      .wrap{
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+      }
+      img#uploadPreview{
+        border: 0;
+        overflow: hidden;
+      }
+      img#uploadPreview {
+        max-width: 600px;
+        max-height: 500px;
+      }
+      .ui-resizable-e {
+        width: 30px;
+        right: -30px;
+        z-index: 9999;
+      }
+      #coderWrapper {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: #FFF;
+        z-index: 99999;
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8) ;
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      #preview {
+        width: 100%;
+        height: 100%;
+      }
+      #preview_right {
+        min-width: 320px;
+        position: relative;
+      }
+      #coderNav {
+        height: 50px;
+        background-color: #2c2c2c;
+        box-shadow: inset 0px -1px 0px rgba(0,0,0,0.1);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        z-index: 999999;
+      }
+      #previewDeviceFormat {
+        width: 400px;
+        margin: auto;
+        color: #808285;
+        font-size: 13px;
+        line-height: 50px;
+        text-align: center;
+      }
+      .CodeMirror {
+        -webkit-font-smoothing: ;
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+      }
+      #saveFromCodeEditor {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        background-color: #68c0b0;
+        height: 50px;
+        padding: 0 35px;
+        line-height: 50px;
+        color: #FFF;
+        font-size: 13px;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+      .moduleCode {
+        height: 0px;
+        overflow-y: hidden;
+        position: relative;
+        z-index: 999999999;
+        box-shadow: 0px 1px 0px rgba(0,0,0,0.08), 0px -1px 0px rgba(0,0,0,0.08);
+      }
+      /* code button */
+      .moduleCodeButton {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 0px;
+        z-index: 9999999;
+        margin-top: -20px;
+      }
+      .codeButton {
+        width: 0%;
+        height: 100%;
+        background-color: #cecece;
+        background-image: url(img/icons/openCodeEditor.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        position: absolute;
+        top: 0px;
+      }
+      .codeButton:hover {
+        background-color: #68c0b0;
+      }
+      .codeButton:active {
+        background-color: #5aafa0;
+      }
+      /* drag button */
+      .moduleDragButton {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 40px;
+        z-index: 9999999;
+        margin-top: -60px;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .dragButton {
+        width: 0%;
+        height: 100%;
+        background-color: #cecece;
+        background-image: url(img/icons/dragButton.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        position: absolute;
+        top: 0px;
+        cursor: -webkit-grab}
+        .dragButton:hover {
+          background-color: #ed7831;
+        }
+        .dragButton:active {
+          cursor: -webkit-grabbing;
+          background-color: #d76824;
+        }
+        /* close button */
+        .moduleDeleteButton {
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          top: 0px;
+          z-index: 9999999;
+          margin-top: -20px;
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+        .deleteButton {
+          width: 0%;
+          height: 100%;
+          background-color: #cecece;
+          background-image: url(img/icons/deleteButton.png);
+          background-position: center center;
+          background-repeat: no-repeat;
+          cursor: pointer;
+          position: absolute;
+          top: 0px;
+        }
+        .deleteButton:hover {
+          background-color: #e75d5d;
+        }
+        .deleteButton:active {
+          background-color: #d14f4f;
+        }
+        /* duplicate button */
+        .moduleDuplicateButton {
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          top: 0px;
+          z-index: 9999999;
+          margin-top: 20px;
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+        .duplicateButton {
+          width: 0%;
+          height: 100%;
+          background-color: #cecece;
+          background-image: url(img/icons/duplicateButton.png);
+          background-position: center center;
+          background-repeat: no-repeat;
+          cursor: pointer;
+          position: absolute;
+          top: 0px;
+        }
+        .duplicateButton:hover {
+          background-color: #58a2d6;
+        }
+        .duplicateButton:active {
+          background-color: #4687b4;
+        }
+        .cm-tab {
+          width: 12px!important;
+          height: 12px!important }
+          .ui-resizable-s {
+            height: 12px;
+            bottom: 0px;
+            z-index: 99999999;
+          }
+          .preventSelection {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+          }
+          @media only screen and (max-width: 1420px) 
+          {
+            /* code button */
+            .moduleCodeButton {
+              right: 0px;
+            }
+            .codeButton {
+              right: 0px;
+            }
+            /* drag button */
+            .moduleDragButton {
+              right: 0px;
+            }
+            .dragButton {
+              right: 0px;
+            }
+            /* close button */
+            .moduleDeleteButton {
+              left: 0px;
+            }
+            .deleteButton {
+              left: 0px;
+            }
+            /* duplicate button */
+            .moduleDuplicateButton {
+              right: 0px;
+            }
+            .duplicateButton {
+              right: 0px;
+            }
+          }
+          @media (min-width: 1421px) {
+            /* code button */
+            .moduleCodeButton {
+              right: -40px;
+            }
+            .codeButton {
+              left: 0px;
+            }
+            /* drag button */
+            .moduleDragButton {
+              right: -40px;
+            }
+            .dragButton {
+              left: 0px;
+            }
+            /* close button */
+            .moduleDeleteButton {
+              left: -40px;
+            }
+            .deleteButton {
+              right: 0px;
+            }
+            /* duplicate button */
+            .moduleDuplicateButton {
+              right: -40px;
+            }
+            .duplicateButton {
+              left: 0px;
+            }
+          }
+
+
+
+          @media only screen and (max-width: 480px){
+            table[class="table"]{
+             width: 100% !important;
+           }
+           table[class="tablemaster"]{
+             width: 100% !important;
+             padding-top: 0px !important;
+             padding-bottom: 0px !important;
+           }
+           table[class="tablefont"]{
+             padding-right: 5px !important;
+             padding-left: 5px !important;
+             width: 100% !important;
+           }
+           table[class="table90"] {
+             width: 90% !important;
+           }
+           img[class="headerimage"] {
+             width: 100% !important;
+             height: auto !important;
+           }
+           img[class="logo"] {
+             width: 100% !important;
+             height: auto !important;
+           }
+           span[class="header"] {
+             font-size: 22px !important;
+             line-height: 24px !important;
+           }
+           span[class="body"] {
+             font-size: 18px !important;
+           }
+           td[class="table"] {
+             width: 100% !important;
+           }
+           
+         }
+       </style>
+       
+    </head><body>
+        
+
+        <!---------------------- Gray and white background----------------------------->
+        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="tablemaster" style="padding-top:25px; padding-bottom:25px;" width="100%">
+         <tbody><tr>
+          <td>
+           <table align="center" bgcolor="#f8fbfc" border="0" cellpadding="0" cellspacing="0" class="table" width="600">
+             <tbody><tr>
+               <td>
+                 <table align="center" border="0" cellpadding="0" cellspacing="0" style="/* border-top:3px solid #db7560; */" width="100%">
+                  <tbody><tr>
+                    <td align="center">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" class="MAS-600"  width="530">
+                        <tbody><tr>
+                          <td height="25">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <table align="left" border="0" cellpadding="0" cellspacing="0" class="MAS3-3" width="81">
+                              
+        <!-------------------- logo Ready4Gmat------------------->
+                              <tbody><tr>
+                                <td align="center" style="line-height:0px;" valign="middle">
+                                  <a href="https://ready4.com/gmat/"></a><img alt="img" data-crop="false" height="60" mc:edit="feature-img-26" src="https://appboy-images.com/appboy/communication/assets/image_assets/images/591953e856ec312446f777bc/original.?1494832104" style="display:block; font-size:0px; line-height:0px; border:0px;"/>
+                                </td>
+                              </tr>
+                            </tbody></table>
+        <!-------------------------------- end logo ------------------------->
+                              
+        <!---------------------------------Space------------------------------->
+                            <table align="left" border="0" cellpadding="0" cellspacing="0" height="20" width="1">
+                              <tbody><tr>
+                                <td height="20" style="font-size: 0;line-height: 0;border-collapse: collapse;">
+                                  <p style="padding-left: 24px;">
+                                    &nbsp;                           
+                                  </p>
+                                </td>
+                              </tr>
+                            </tbody></table>
+    <!---------------------------------End Space--------------------------->
+                            
+        <!--------------------------------  phone number & Log In ----------------------------->
+                              <table align="right" border="0" cellpadding="0" cellspacing="0" class="MAS3-3">
+                              <tbody><tr>
+                                <td align="center">
+                                  <table border="0" cellpadding="0" cellspacing="0" class="MAS-inner" width="100%">
+                                    <tbody><tr>
+                                      <td align="center">
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" data-bgcolor="Button" style="border-radius: 5px; ">
+                                          <tbody><tr>
+                                            <td style="padding-bottom: 20px; color: #213e7d; font-size:10px; font-family:'Fira Sans', sans-serif;">
+                                        <p>+1 (866) 292-0660</p>
+                                                
+                                              
+                                            </td>
+                                          </tr>
+                                              <tr>
+                                            <td id="button" align="center" mc:edit="content-title-11" style="font-family:'Fira Sans', sans-serif; background-color: #00baf1; color:#7f8c8d; font-size:13px; line-height:28px;padding-left: 15px;padding-right: 15px;">
+                                              <a data-color="Button Link" href="http://r.yoz.io/ZV.c.k" style="color:#ffffff; text-decoration: none;">
+                                                LOG IN                                           
+                                              </a>
+                                            </td>
+                                          </tr>
+                                        </tbody></table>
+                                      </td>
+                                    </tr>
+                                  </tbody></table>
+                                </td>
+                              </tr>
+                            </tbody></table>
+                              
+        <!---------------------------- end Log in -------------------------->
+
+                          </td>
+                        </tr>
+                      </tbody></table>
+                        </td></tr><tr>
+                        <td height="25">
+                      </td>
+                            </tr>
+                    
+                  
+                </tbody></table>
+        <!---------------------------- end Header -------------------------->
+
+
+                   <!---------------------------- welcome Image ------------------------------->
+                  
+                <table align="center" border="0" bgcolor="#f8fbfc" cellpadding="0" cellspacing="0" class="table" style="border-space: 0px;" width="550">
+                  <tbody><tr>
+                   <td align="center">
+                     <img align="texttop" border="0" class="headerimage" height="auto" src="https://appboy-images.com/appboy/communication/assets/image_assets/images/591961511b0e4d3229f51d63/original.?1494835537" style="padding: 0px;" width="530"/>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!------------------------------- End Ofwelcome  Image ------------------------->
+                 
+                     <!--------------------------- Title  ------------------------->
+                   <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="table" style="padding-bottom: 10px; padding-top:15px; padding-left: 20px; padding-right: 20px; border-space: 0px;" width="530">
+                <tbody><tr>
+                  
+                 <td align="let" class="header">
+                  <span class="header" style="line-height: 23px; font-family:'Fira Sans', sans-serif; font-size: 19px; color: #404040;">Welcome to Ready4 GMAT!
+                </span></td>
+              </tr>
+            </tbody>
+            </table>
+    <!-------------------------------End Of Title  ------------------------------->
+            
+    <!------------------------------ first Text ----------------------------------------->
+            <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="table" style="padding-bottom: 15px; padding-left: 20px; padding-right: 20px; border-space: 0px;" width="530">
+              <tbody><tr>
+                
+               <td align="left" class="body">
+                <span class="body" style="line-height: 22px; font-family:'Fira Sans', sans-serif; font-size: 14px; color: #a1a09f;">
+                 Thanks for giving us the opportunity to help guide your MBA journey. You've already figured out that an impressive GMAT score will be a big part of success, and with Ready4, now you've got the tools to achieve it.
+                   
+                   </span>
+
+</td>
+                
+              </tr>
+            </tbody>
+            </table>
+    <!----------------------------End Of first Text ------------------------------------>
+                    <!---------------------------- light blue line image ------------------------------->
+                  
+                <table align="center" border="0" bgcolor="#ffffff" cellpadding="0" cellspacing="0" class="table" style="border-space: 0px;" width="530">
+                  <tbody><tr>
+                   <td >
+                     <img align="left" border="0" class="headerimage" height="auto" src="https://appboy-images.com/appboy/communication/assets/image_assets/images/591964031b0e4d3529f51d6c/original.?1494836227" style="padding: 0px; padding-left:20px" width="50"/>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!------------------------------- End of light blue line image ------------------------->
+                   
+                    <!------------------------------ second Text ----------------------------------------->
+            <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="table" style="padding-bottom: 15px; padding-left: 20px; padding-right: 20px; border-space: 0px;" width="530">
+              <tbody><tr>
+                
+               <td align="left" class="body">
+                <span class="body" style="line-height: 22px; font-family:'Fira Sans', sans-serif; font-size: 14px; color: #a1a09f;">
+                 <br>
+                   So what should you do to take full advantage of Ready4's expertise and powerful, MIT-developed adaptive technology?<br>
+                   
+                   </span>
+
+</td>
+                
+              </tr>
+            </tbody>
+            </table>
+    <!----------------------------End Of second Text ------------------------------------>
+                      
+                    <!------------------------------ bullets Text ----------------------------------------->
+            <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="table" style="padding-bottom: 15px; padding-left: 20px; padding-right: 20px; border-space: 0px;" width="530">
+              <tbody><tr>
+                
+               <td align="left" class="body">
+                <span class="body" style="line-height: 22px; font-family:'Fira Sans', sans-serif; font-size: 14px; color: #000000;">
+                 
+        
+                   <ul>
+                    <li style="color: #00baf1"><span style="color:#000000">Take the adaptive assesment to get your precise estimated score</span></li><br>
+                       <li style="color: #00baf1"><span style="color:#000000">Review your ansers- and try out the video explanations!</span></li><br>
+                       <li style="color: #00baf1"><span style="color:#000000">Check out your analytics by clicking the button at the top right - you can see your mastery, pace, and progress for every section of the test.</span></li> 
+                    </ul>
+                    
+                   </span>
+</td>
+                
+              </tr>
+            </tbody>
+            </table>
+    <!----------------------------End Of bullet Text ------------------------------------>
+ 
+                       <!------------------------------ last Text ----------------------------------------->
+            <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="table" style="padding-bottom: 15px; padding-left: 20px; padding-right: 20px; border-space: 0px;" width="530">
+              <tbody><tr>
+                
+               <td align="left" class="body">
+                <span class="body" style="line-height: 22px; font-family:'Fira Sans', sans-serif; font-size: 14px; color: #a1a09f;">
+                 
+        
+                 
+                    If you have any questions, don't hesitate to shoot us an email or give us a call. We're here to help!
+                   </span>
+<br/>
+                  <br/>
+</td>
+                
+              </tr>
+            </tbody>
+            </table>
+    <!----------------------------End Of last Text ------------------------------------>
+ 
+                   
+                    <!------------------------------ tip ----------------------------------------->
+            <table align="center" bgcolor="#00baf1" border="0" cellpadding="0" cellspacing="0" class="table" style="padding-bottom: 15px; padding-top: 15px; padding-left: 20px; padding-right: 20px; border-space: 0px;" width="530">
+              <tbody><tr>
+                
+               <td align="center" class="body">
+                <span class="body" style="line-height: 22px; font-family:'Fira Sans', sans-serif; font-size: 15px; color: #ffffff;">
+                 <b>Need motivation to study? Tell yourself you'll do just one question - once you start, you'll keep going</b>
+
+</td>
+                
+              </tr>
+            </tbody>
+            </table>
+    <!----------------------------End Of tip ------------------------------------>
+                   
+                    <!---------------------------- timeline day image ------------------------------->
+                  
+                <table align="center" border="0" bgcolor="#ffffff" cellpadding="0" cellspacing="0" class="table" style="border-space: 0px;" width="530">
+                  <tbody><tr>
+                   <td align="center">
+                     <img align="center" border="0" class="headerimage" height="auto" src="https://appboy-images.com/appboy/communication/assets/image_assets/images/591966585c5a680d3c7e0591/original.?1494836824" width="350" style="padding-top:20px; padding-bottom:30px"/>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!-------------------------------  end of timeline day image ------------------------->
+ 
+        <!---------------------------try a question button------------------------>     
+            <table align="center" border="0" cellpadding="0" cellspacing="0" class="table" width="530" bgcolor="#ffffff" style="padding-bottom:40px">
+              <tbody><tr>
+                <td>
+                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="40%">
+                    <tbody><tr>
+                         <td id="button" align="center" mc:edit="content-title-11" style="font-family:'Fira Sans', sans-serif; background-color: #00baf1; color:#7f8c8d; font-size:15px; line-height:28px;padding-top:5px; padding-bottom:5px; padding-left: 10px;padding-right: 10px;">
+                                              <a data-color="Button Link" href="http://r.yoz.io/ZV.c.k" style="color:#ffffff; text-decoration: none;">
+                                                Try a Question
+                                              </a>
+                                            </td>
+                  </tbody>
+                </table>
+                </td>
+              </tr>
+            </tbody>
+        </table>
+                   
+    <!---------------------------End Of try a question buttom------------------------>     
+<!---------------------------------Space------------------------------->
+                            <table align="left" border="0" cellpadding="0" cellspacing="0" height="20" width="1">
+                              <tbody><tr>
+                                <td height="20" style="font-size: 0;line-height: 0;border-collapse: collapse;">
+                                  <p style="padding-left: 24px;">
+                                    &nbsp;                           
+                                  </p>
+                                </td>
+                              </tr>
+                            </tbody></table>
+ <!---------------------------------End Space--------------------------->
+ 
+                 
+
+
+    <!---------------------------Signature------------------------>     
+          <table align="center" bgcolor="#f8fbfc" border="0" cellpadding="0" cellspacing="0" class="table" style="border-space: 0px;" width="600">
+            <tbody><tr>
+              <td align="center" style="padding-top:15px; padding-right:9px; padding-left:9px; padding-bottom: 9px;" valign="top">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" style="border-space: 0px;">
+                  <tbody><tr>
+                    <td align="center" class="table" valign="top">
+                                    <!--[if mso]>
+                                    <table align="center" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                      <![endif]-->
+                                      
+                                        <!--[if mso]>
+                                        <td align="center" valign="top">
+                                          <![endif]-->
+                                          
+                                          <table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnFollowStacked" style="display:inline;">
+                                           
+                                            <tbody><tr>
+                                              <td align="center" class="mcnFollowIconContent" style="padding-right:10px; padding-bottom:9px;" valign="top">
+                                                <a href="https://www.facebook.com/Ready4GMAT/" target="_blank"><img alt="Facebook" class="mcnFollowBlockIcon" src="https://appboy-images.com/appboy/communication/assets/image_assets/images/59196d005c5a6861027e068c/original.?1494838528" style="width:40px; max-width:40px; display:block;" width="48"/></a>
+                                              </td>
+                                            </tr>
+                                            
+                                            
+                                          </tbody></table>
+                                          
+                                          
+                                        <!--[if mso]>
+                                        </td>
+                                        <![endif]-->
+                                        
+                                        
+                                        
+                                        <!--[if mso]>
+                                        <td align="center" valign="top">
+                                          <![endif]-->
+                                          
+                                          <table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnFollowStacked" style="display:inline;">
+                                           
+                                            <tbody><tr>
+                                              <td align="center" class="mcnFollowIconContent" style="padding-right:10px; padding-bottom:9px;" valign="top">
+                                                <a href="https://twitter.com/ready4gmat" target="_blank"><img alt="Twitter" class="mcnFollowBlockIcon" src="https://appboy-images.com/appboy/communication/assets/image_assets/images/59196d4b1b0e4d3529f51df5/original.?1494838603" style="width:48px; max-width:40px; display:block;" width="40"/></a>
+                                              </td>
+                                            </tr>
+                                            
+                                            
+                                          </tbody></table>
+                        
+                         <!--[if mso]>
+                                    <table align="center" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                      <![endif]-->
+                                      
+                                        <!--[if mso]>
+                                        <td align="center" valign="top">
+                                          <![endif]-->
+                                          
+                                          <table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnFollowStacked" style="display:inline;">
+                                           
+                                            <tbody><tr>
+                                              <td align="center" class="mcnFollowIconContent" style="padding-right:10px; padding-bottom:9px;" valign="top">
+                                                <a href="https://www.linkedin.com/company-beta/15154408/" target="_blank"><img alt="Facebook" class="mcnFollowBlockIcon" src="https://appboy-images.com/appboy/communication/assets/image_assets/images/59196e3956ec31227ef778fa/original.?1494838841" style="width:40px; max-width:40px; display:block;" width="48"/></a>
+                                              </td>
+                                            </tr>
+                                            
+                                            
+                                          </tbody></table>
+                                          
+                                          
+                                        <!--[if mso]>
+                                        </td>
+                                        <![endif]-->
+                                        
+                                        <!--[if mso]>
+                                        <td align="center" valign="top">
+                                          <![endif]-->
+                                          
+                                          <table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnFollowStacked" style="display:inline;">
+                                           
+                                            <tbody><tr>
+                                              <td align="center" class="mcnFollowIconContent" style="padding-right:0; padding-bottom:9px;" valign="top">
+                                                <a href="https://ready4.com/gmat/" target="_blank"><img alt="Website" class="mcnFollowBlockIcon" src="https://appboy-images.com/appboy/communication/assets/image_assets/images/59196e6f1b0e4d1fbff51e56/original.?1494838895" style="width:40px; max-width:40px; display:block;" width="48"/></a>
+                                              </td>
+                                            </tr>
+                                            
+                                            
+                                          </tbody></table>
+                                          
+                                          
+                                        <!--[if mso]>
+                                        </td>
+                                        <![endif]-->
+                                        
+                                    <!--[if mso]>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+                                  </td>
+                                </tr>
+                              </tbody></table>
+                            </td>
+                          </tr>
+                        </tbody></table>
+                        <table align="center" bgcolor="#f8fbfc" border="0" cellpadding="0" cellspacing="0" class="table" style="border-space: 0px;" width="600">
+                          <tbody><tr>
+                            <td align="center" class="mcnTextContent" style="display: block; font-family:'Fira Sans', sans-serif; color: #000000; font-size:10px; padding: 0px 12px 9px; padding-top: 5px;" valign="top">
+                        
+                            Copyright &copy; 2017 Ready4, Inc., All rights reserved.   |   76 Summer Street, Boston, MA 02110
+
+<br/>
+
+
+You can <a href="{{${set_user_to_subscribed_url}}} " style="color: #000000"><b>update your preferences</b></a> or <a href="{{${set_user_to_unsubscribed_url}}} " style="color: #000000"><b>unsubscribe from this list</b></a><br/>
+                        </td>
+                          </tr>
+                        </tbody></table>
+                        
+                      </td>
+                    </tr>
+                  </tbody></table>
+                </td>
+              </tr>
+            </tbody></table>
+
+          
+          </body></html>
